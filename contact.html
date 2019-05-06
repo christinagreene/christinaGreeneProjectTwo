@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FunPlace - Contact Us</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Walter+Turncoat" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="contactHeader">
+    <div class="wrapper">
+      <nav class="contactMenu menu">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Go to FunPlace's home page.">Home</a>
+          </li>
+          <li>
+            <a href="index.html/#about" aria-label="Go to FunPlace's About section on the home page.">About</a>
+          </li>
+          <li>
+            <a href="blog.html" aria-label="Go to FunPlace's blog.">Blog</a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Go to FunPlace's contact page.">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="secondaryTitle">Get in Touch</h1>
+    </div>
+  </header>
+  <main class="contactMain">
+    <aside class="contactLeft wrapper">
+      <nav class="social">
+        <ul>
+          <li>
+            <a href="http://www.facebook.com/funplace" aria-label="Go to FunPlace's Facebook Page."><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com/funplace" aria-label="Go to FunPlace's Instagram Page."><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="http://www.twitter.com/funplace" aria-label="Go to FunPlace's Twitter Page."><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="http://web.whatsapp.com/funplace" aria-label="Send a message to FunPlace on WhatsApp."><i class="fab fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <p><a href="mailto:info@email.com">info@email.com</a></p>
+      <div class="contactAddress">
+        <p>123 - 456 - 7890</p>
+        <p>123 Queen Street West, Unit 10</p>
+        <p>Toronto, Ontario</p>
+        <p>M5V 2D5</p>
+      </div>
+    </aside>
+    <section class="contactRight wrapper">
+      <form action="sendEmail.php" method="POST" name="contactForm" autocomplete="on" class="contactForm">
+        <label for="name" class="visuallyHidden">Enter your name.</label>
+        <input type="text" id="name" name="name" required="true" placeholder="Name">
+      
+        <label for="email" class="visuallyHidden">Enter your email address.</label>
+        <input type="email" id="email" name="email" required="true" placeholder="Email address">
+      
+        <textarea name="specialInstructions" cols="62" rows="7" placeholder="Message"></textarea>
+      
+        <button>Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2019 HackerYou</p>
+  </footer>
+</body>
+</html>

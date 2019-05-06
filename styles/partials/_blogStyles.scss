@@ -1,0 +1,109 @@
+// Blog Page Styles //////////
+
+// Colours ///////////
+$primaryFontColor: #f3faff;
+$secondayFontColor: #474bb5;
+$primaryBackgroundColor: #03697c;
+$secondaryBackgroundColor: #474bb5;
+$accentColor: #08fded;
+$footerColor: #044779;
+//////////////////////
+
+// Fonts /////////////
+$primaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Walter Turncoat', cursive;
+//////////////////////
+
+.blogHeader {
+  background: url(../../assets/blogHeader.jpg) top center/100% no-repeat;
+  height: 70vh;
+}
+
+.blogMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  .blogLeft {
+    width: 30%;
+    margin-right: 5%;
+    padding-top: 6%;
+    .mission {
+      background: $secondaryBackgroundColor;
+      width: 86%;
+      padding: 7px 40px 5px 30px;
+      margin: -5px 0 0 75px;
+    }
+    img {
+      box-shadow: 30px 9px 0 -9px rgba(71,75,181,1);
+    }
+    h3 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 10px 0 40px 0;
+      line-height: 1.5;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "•";
+      color: $accentColor;
+      line-height: 1.5;
+      margin-right: 15px;
+    }
+  }
+  .blogRight {
+    width: 61%;
+    margin-left: 4%;
+    margin-top: -11%;
+    .activitiesImage img {
+      box-shadow: -25px 25px 0 -5px rgba(8,253,237,1);
+    }
+    .activitiesHeading {
+      margin: 0;
+      line-height: 1;
+    }
+    .activitiesDescription {
+      border-left: 3px solid $accentColor;
+      border-bottom: 3px solid $accentColor;
+      margin: -5px 0 0 -20px;
+      padding: 8% 11%;
+    }
+    .comments {
+      padding: 2% 10% 0 8%;
+    }
+    .commentsHeading {
+      margin: 2% 0;
+    }
+    .comment1,
+    .comment2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    .comment1 {
+      margin-bottom: 8%;
+    }
+    .comment2 {
+      margin-bottom: 2%;
+    }
+    .commentImage {
+      width: 12%;
+    }
+    .commentInfo {
+      width: 83%;
+      margin-left: 5%;
+    }
+    .commentDate {
+      font-weight: 700;
+      font-style: italic;
+      margin: 0;
+    }
+    .commentPara {
+      margin: 10px 0 30px 0;
+    }
+  }
+}
+

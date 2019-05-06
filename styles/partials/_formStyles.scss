@@ -1,0 +1,91 @@
+// Contact & Comment Form  Styles //////////
+
+// Colours ///////////
+$primaryFontColor: #f3faff;
+$secondayFontColor: #474bb5;
+$primaryBackgroundColor: #03697c;
+$secondaryBackgroundColor: #474bb5;
+$accentColor: #08fded;
+$footerColor: #044779;
+//////////////////////
+
+// Fonts /////////////
+$primaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Walter Turncoat', cursive;
+//////////////////////
+
+// Common styles ///////////
+form {
+  input[id=name],
+  input[id=email],
+  textarea {
+    color: $primaryFontColor;
+    padding: 20px;
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+  input[id=name],
+  input[id=email] {
+    width: 46.5%;
+    margin-bottom: 30px;
+    border: none;
+  }
+  input[id=name] {
+    margin-right: 3%;
+  }
+  button {
+  display: block;
+  width: 96.7%;
+  font-family: $secondaryFont;
+  color: $secondayFontColor;
+  text-transform: capitalize;
+  background: $accentColor;
+  border: 1px solid $accentColor;
+  padding: 5px;
+  margin: 5% 0 10% 0;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background: $primaryFontColor;
+    border: 1px solid $primaryFontColor;
+  }
+  }
+}
+
+
+// Comment Form only - Blog Page ///////////////
+.commentForm {
+  padding: 0 6%;
+  input[id=name],
+  input[id=email],
+  textarea {
+    background: $primaryBackgroundColor;
+  }
+  input[id=name],
+  input[id=email] {
+    border-bottom: 1px solid $accentColor;
+  }
+  textarea {
+    border: 1px solid $accentColor;
+  }
+}
+
+// Contact Form only - Conact Page /////////////
+.contactForm {
+  padding: 7% 4% 1% 6%;
+  background: $secondaryBackgroundColor;
+  margin-top: -26%;
+  box-shadow: 20px 20px 0 -5px rgba(8,253,237,1);
+  input[id=name],
+  input[id=email],
+  textarea {
+    background: $secondaryBackgroundColor;
+  }
+  input[id=name],
+  input[id=email] {
+    border-bottom: 1px solid $primaryFontColor;
+  }
+  textarea {
+    border: 1px solid $primaryFontColor;
+  }
+}
