@@ -11,15 +11,16 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <a href="#contactMain" class="visuallyHidden">Skip to the main content on this page.</a>
   <header class="contactHeader">
-    <div class="wrapper">
-      <nav class="contactMenu menu">
+    <div class="headerContent wrapper">
+      <nav class="secondaryMenu menu">
         <ul>
           <li>
             <a href="index.html" aria-label="Go to FunPlace's home page.">Home</a>
           </li>
           <li>
-            <a href="index.html/#about" aria-label="Go to FunPlace's About section on the home page.">About</a>
+            <a href="index.html#about" aria-label="Go to FunPlace's About section on the home page.">About</a>
           </li>
           <li>
             <a href="blog.html" aria-label="Go to FunPlace's blog.">Blog</a>
@@ -29,10 +30,11 @@
           </li>
         </ul>
       </nav>
+      <i class="fa fa-bars"></i>
       <h1 class="secondaryTitle">Get in Touch</h1>
     </div>
   </header>
-  <main class="contactMain">
+  <main class="contactMain" id="contactMain">
     <aside class="contactLeft wrapper">
       <nav class="social">
         <ul>
@@ -66,7 +68,8 @@
         <label for="email" class="visuallyHidden">Enter your email address.</label>
         <input type="email" id="email" name="email" required="true" placeholder="Email address">
       
-        <textarea name="specialInstructions" cols="62" rows="7" placeholder="Message"></textarea>
+        <label for="message" class="visuallyHidden">Please enter your message.</label>
+        <textarea name="message" id="message" placeholder="Message" required="true"></textarea>
       
         <button>Submit</button>
       </form>

@@ -2,7 +2,7 @@
 
 // Colours ///////////
 $primaryFontColor: #f3faff;
-$secondayFontColor: #474bb5;
+$secondaryFontColor: #474bb5;
 $primaryBackgroundColor: #03697c;
 $secondaryBackgroundColor: #474bb5;
 $accentColor: #08fded;
@@ -27,14 +27,14 @@ $secondaryFont: 'Walter Turncoat', cursive;
     width: 30%;
     margin-right: 5%;
     padding-top: 6%;
-    .mission {
-      background: $secondaryBackgroundColor;
-      width: 86%;
-      padding: 7px 40px 5px 30px;
-      margin: -5px 0 0 75px;
-    }
     img {
       box-shadow: 30px 9px 0 -9px rgba(71,75,181,1);
+    }
+    .mission {
+      background: $secondaryBackgroundColor;
+      padding: 7px 20px 5px 30px;
+      margin: -5px 0 0 75px;
+      box-shadow: 21px 0 0 0 rgba(71,75,181,1);
     }
     h3 {
       margin-bottom: 10px;
@@ -44,14 +44,32 @@ $secondaryFont: 'Walter Turncoat', cursive;
       line-height: 1.5;
     }
     ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
     }
-    li::before {
-      content: "•";
+    li {
       color: $accentColor;
+      list-style-type: "•";
+      list-style-position: inside;
+      text-indent: -1rem;
+      padding-left: 1rem;
       line-height: 1.5;
-      margin-right: 15px;
+    }
+    a {
+      text-decoration: none;
+      color: $primaryFontColor;
+      &:hover {
+        border-bottom: 1px solid $accentColor;
+      }
+      &:active {
+        color: $accentColor;
+      }
+      &:focus {
+        border: 1px dotted $primaryFontColor;
+      }
+      &:visited {
+        color: darkgrey;
+      }
     }
   }
   .blogRight {

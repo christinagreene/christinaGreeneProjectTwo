@@ -6,31 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FunPlace - Blog</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Walter+Turncoat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <a href="#blogMain" class="visuallyHidden">Skip to the main content on this page.</a>
   <header class="blogHeader">
-    <div class="wrapper">
-      <nav class="blogMenu menu">
+    <div class="headerContent wrapper">
+      <nav class="secondaryMenu menu">
         <ul>
           <li>
             <a href="index.html" aria-label="Go to FunPlace's home page.">Home</a>
           </li>
           <li>
-            <a href="index.html/#about" aria-label="Go to FunPlace's About section on the home page.">About</a>
+            <a href="index.html#about" aria-label="Go to FunPlace's About section on the home page.">About</a>
           </li>
           <li>
-            <a href="blog.html" aria-label="Go to FunPlace's blog.">Blog</a>
+            <a href="blog.html" aria-label="Go to FunPlace's blog page.">Blog</a>
           </li>
           <li>
             <a href="contact.html" aria-label="Go to FunPlace's contact page.">Contact</a>
           </li>
         </ul>
       </nav>
+      <i class="fa fa-bars"></i>
       <h1 class="secondaryTitle">Blog</h1>
     </div>
   </header>
-  <main class="blogMain">
+  <main class="blogMain" id="blogMain">
     <!-- Left side of Blog Page - Aside -->
     <aside class="blogLeft">
       <div class="missionImage">
@@ -44,10 +48,18 @@
         <div class="recents">
           <h3>Recent posts</h3>
           <ul>
-            <li>Donec facilisis tortor ut</li>
-            <li>Augue lacuna at viverra</li>
-            <li>Semper sed sapine mets</li>
-            <li>Scelerisque nec pharetra id</li>
+            <li>
+              <a href="#" aria-label="Click for Recent Blog Post 1.">Donec facilisis tortor ut</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Click for Recent Blog Post 2.">Augue lacuna at viverra</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Click for Recent Blog Post 3.">Semper sed sapine mets</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Click for Recent Blog Post 4.">Scelerisque nec pharetra id</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -59,7 +71,7 @@
         <div class="activitiesImage">
           <img src="assets/image10.jpg" alt="A young child reaching up and popping one of the many bubbles above her head.">
         </div>
-        <div class="activitiesDescription wrapper">
+        <div class="activitiesDescription">
           <h2 class="activitiesHeading">New activities</h2>
           <p>Monday, January 30, 2019 by Saron</p>
           <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amen rises. Nam tempus vel odio vitae aliquam.</p>
@@ -92,19 +104,18 @@
         </div>
       </div>
       <!-- Comment Form -->
-      <div class="wrapper">
-        <form action="sendEmail.php" method="POST" name="commentForm" autocomplete="on" class="commentForm">
-          <label for="name" class="visuallyHidden">Enter your name.</label>
-          <input type="text" id="name" name="name" required="true" placeholder="Name">
+      <form action="sendEmail.php" method="POST" name="commentForm" autocomplete="on" class="commentForm">
+        <label for="name" class="visuallyHidden">Enter your name.</label>
+        <input type="text" id="name" name="name" required="true" placeholder="Name">
 
-          <label for="email" class="visuallyHidden">Enter your email address.</label>
-          <input type="email" id="email" name="email" required="true" placeholder="Email address">
+        <label for="email" class="visuallyHidden">Enter your email address.</label>
+        <input type="email" id="email" name="email" required="true" placeholder="Email address">
 
-          <textarea name="specialInstructions" cols="63" rows="5" placeholder="Comment"></textarea>
+        <label for="comment" class="visuallyHidden">Please enter your comment.</label>
+        <textarea name="comment" id="comment" placeholder="Comment" required="true"></textarea>
 
-          <button>Post comment</button>
-        </form>
-      </div>
+        <button>Post comment</button>
+      </form>
     </section>
   </main>
   <footer>

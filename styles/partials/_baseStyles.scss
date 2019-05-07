@@ -2,7 +2,7 @@
 
 // Colours ///////////
 $primaryFontColor: #f3faff;
-$secondayFontColor: #474bb5;
+$secondaryFontColor: #474bb5;
 $primaryBackgroundColor: #03697c;
 $secondaryBackgroundColor: #474bb5;
 $accentColor: #08fded;
@@ -57,7 +57,7 @@ h3 {
 }
 
 .secondaryTitle {
-  font-size: 10rem;
+  font-size: 7.8vw;
   margin: 0;
 }
 
@@ -71,17 +71,50 @@ h3 {
   font-size: 7rem;
 }
 
+// Hamburger Menu Styles
+.hero,
+.headerContent {
+  position: relative;
+}
+.hero {
+  .fa-bars {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 3rem;
+  visibility: hidden;
+  }
+}
+
+.headerContent {
+  .fa-bars {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  font-size: 3rem;
+  visibility: hidden;
+  }
+}
 
 // Button (anchor tags) Styles /////////////////
 .clickForMore {
   font-family: $secondaryFont;
   text-transform: capitalize;
   text-decoration: none;
-  color: $secondayFontColor;
+  color: $secondaryFontColor;
   background: $accentColor;
   padding: 5px 10px;
   transition: background .3s ease-in-out;
   &:hover {
     background: $primaryFontColor;
+  }
+  &:active {
+    color: $primaryBackgroundColor;
+  }
+  &:focus {
+    border: 1px dotted $primaryBackgroundColor;
+  }
+  &:visited {
+    color: $footerColor;
   }
 }

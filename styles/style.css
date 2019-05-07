@@ -181,7 +181,7 @@ h3 {
   letter-spacing: 1px; }
 
 .secondaryTitle {
-  font-size: 10rem;
+  font-size: 7.8vw;
   margin: 0; }
 
 .heading {
@@ -191,6 +191,24 @@ h3 {
 .activitiesHeading,
 .commentsHeading {
   font-size: 7rem; }
+
+.hero,
+.headerContent {
+  position: relative; }
+
+.hero .fa-bars {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 3rem;
+  visibility: hidden; }
+
+.headerContent .fa-bars {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  font-size: 3rem;
+  visibility: hidden; }
 
 .clickForMore {
   font-family: "Walter Turncoat", cursive;
@@ -204,10 +222,19 @@ h3 {
   transition: background .3s ease-in-out; }
   .clickForMore:hover {
     background: #f3faff; }
+  .clickForMore:active {
+    color: #03697c; }
+  .clickForMore:focus {
+    border: 1px dotted #03697c; }
+  .clickForMore:visited {
+    color: #044779; }
+
+.hero .menu {
+  width: 80%; }
 
 .menu ul {
   margin: 0;
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,14 +259,18 @@ h3 {
       transition: border-bottom .3s ease-in-out; }
       .menu ul li a:hover {
         border-bottom: 3px solid #08fded; }
+      .menu ul li a:active {
+        border-bottom: 3px dashed #474bb5; }
+      .menu ul li a:focus {
+        border: 1px dotted #08fded; }
+      .menu ul li a:visited {
+        color: rgba(129, 204, 199, 0.849); }
 
-.blogMenu ul,
-.contactMenu ul {
+.secondaryMenu ul {
   padding-bottom: 30px; }
 
 .hero {
-  background: url(../../assets/homeHeader.jpg) top center/100% no-repeat;
-  height: 110vh; }
+  background: url(../../assets/homeHeader.jpg) top center/100% no-repeat; }
 
 .indexHeader {
   display: -webkit-box;
@@ -249,12 +280,12 @@ h3 {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: 43px 0 100px 0; }
+  margin: 8.2% 0 0 0; }
   .indexHeader h1 {
-    font-size: 11.52rem;
+    font-size: 9vw;
     width: 44%;
-    margin-left: 9%;
-    margin-right: 3%;
+    margin-left: 8.5%;
+    margin-right: 4%;
     padding-top: 27px; }
   .indexHeader img {
     width: 56%; }
@@ -270,10 +301,7 @@ h3 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 4% 0 8% 0; }
-  .info .space,
-  .info .community,
-  .info .blog,
-  .info .touch {
+  .info .infoContainer {
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -282,10 +310,7 @@ h3 {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row; }
-    .info .space .fas,
-    .info .community .fas,
-    .info .blog .fas,
-    .info .touch .fas {
+    .info .infoContainer .fas {
       background: #08fded;
       color: #474bb5;
       width: 40px;
@@ -296,10 +321,7 @@ h3 {
       vertical-align: middle;
       font-size: 2rem;
       margin-top: 5px; }
-    .info .space .infoContent,
-    .info .community .infoContent,
-    .info .blog .infoContent,
-    .info .touch .infoContent {
+    .info .infoContainer .infoContent {
       margin: 0 10px; }
 
 .programsLocations {
@@ -319,7 +341,7 @@ h3 {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .programsLocations .programs {
-    margin-bottom: 50px; }
+    margin-bottom: 4%; }
   .programsLocations .programsImage,
   .programsLocations .locationsImage {
     width: 43%; }
@@ -415,27 +437,41 @@ h3 {
     width: 30%;
     margin-right: 5%;
     padding-top: 6%; }
-    .blogMain .blogLeft .mission {
-      background: #474bb5;
-      width: 86%;
-      padding: 7px 40px 5px 30px;
-      margin: -5px 0 0 75px; }
     .blogMain .blogLeft img {
       -webkit-box-shadow: 30px 9px 0 -9px #474bb5;
       box-shadow: 30px 9px 0 -9px #474bb5; }
+    .blogMain .blogLeft .mission {
+      background: #474bb5;
+      padding: 7px 20px 5px 30px;
+      margin: -5px 0 0 75px;
+      -webkit-box-shadow: 21px 0 0 0 #474bb5;
+      box-shadow: 21px 0 0 0 #474bb5; }
     .blogMain .blogLeft h3 {
       margin-bottom: 10px; }
     .blogMain .blogLeft p {
       margin: 10px 0 40px 0;
       line-height: 1.5; }
     .blogMain .blogLeft ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0; }
-    .blogMain .blogLeft li::before {
-      content: "•";
+    .blogMain .blogLeft li {
       color: #08fded;
-      line-height: 1.5;
-      margin-right: 15px; }
+      list-style-type: "•";
+      list-style-position: inside;
+      text-indent: -1rem;
+      padding-left: 1rem;
+      line-height: 1.5; }
+    .blogMain .blogLeft a {
+      text-decoration: none;
+      color: #f3faff; }
+      .blogMain .blogLeft a:hover {
+        border-bottom: 1px solid #08fded; }
+      .blogMain .blogLeft a:active {
+        color: #08fded; }
+      .blogMain .blogLeft a:focus {
+        border: 1px dotted #f3faff; }
+      .blogMain .blogLeft a:visited {
+        color: darkgrey; }
   .blogMain .blogRight {
     width: 61%;
     margin-left: 4%;
@@ -496,6 +532,9 @@ h3 {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 5% 0 8% 0; }
   .contactMain .contactLeft {
     width: 25%;
@@ -522,9 +561,23 @@ h3 {
       transition: color .3s ease-in-out; }
       .contactMain .contactLeft .social a:hover {
         color: #08fded; }
+      .contactMain .contactLeft .social a:active {
+        color: #474bb5; }
+      .contactMain .contactLeft .social a:focus {
+        border: 1px dotted #474bb5; }
+      .contactMain .contactLeft .social a:visited {
+        color: #044779; }
     .contactMain .contactLeft p a {
       color: #f3faff;
       text-decoration: none; }
+      .contactMain .contactLeft p a:hover {
+        color: #08fded; }
+      .contactMain .contactLeft p a:active {
+        color: #474bb5; }
+      .contactMain .contactLeft p a:focus {
+        border: 1px dotted #474bb5; }
+      .contactMain .contactLeft p a:visited {
+        color: #044779; }
     .contactMain .contactLeft .contactAddress p {
       margin: 0; }
   .contactMain .contactRight {
@@ -552,6 +605,22 @@ form textarea {
   form input[id=email]::placeholder,
   form textarea::placeholder {
     opacity: 1; }
+  form input[id=name]:hover,
+  form input[id=email]:hover,
+  form textarea:hover {
+    color: #08fded; }
+  form input[id=name]:active,
+  form input[id=email]:active,
+  form textarea:active {
+    color: #044779; }
+  form input[id=name]:focus,
+  form input[id=email]:focus,
+  form textarea:focus {
+    border: 1px dotted #08fded; }
+  form input[id=name]:visited,
+  form input[id=email]:visited,
+  form textarea:visited {
+    color: #474bb5; }
 
 form input[id=name],
 form input[id=email] {
@@ -562,25 +631,37 @@ form input[id=email] {
 form input[id=name] {
   margin-right: 3%; }
 
+form textarea {
+  width: 97%;
+  height: 200px;
+  resize: none;
+  overflow: hidden; }
+
 form button {
   display: block;
-  width: 96.7%;
+  width: 97%;
   font-family: "Walter Turncoat", cursive;
   color: #474bb5;
   text-transform: capitalize;
   background: #08fded;
   border: 1px solid #08fded;
   padding: 5px;
-  margin: 5% 0 10% 0;
+  margin: 5% 0 6% 0;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
   form button:hover {
     background: #f3faff;
     border: 1px solid #f3faff; }
+  form button:active {
+    color: #03697c; }
+  form button:focus {
+    border: 1px dotted #474bb5; }
+  form button:visited {
+    color: #044779; }
 
 .commentForm {
-  padding: 0 6%; }
+  margin: 0 6% 0 5%; }
   .commentForm input[id=name],
   .commentForm input[id=email],
   .commentForm textarea {
@@ -612,4 +693,240 @@ footer {
   text-align: center; }
   footer p {
     margin: 0;
-    padding: 15px 0 20px 0; }
+    padding: 10px 0; }
+
+@media (max-width: 1080px) {
+  .info {
+    width: 80%; }
+    .info .infoContent {
+      margin: 0 8%; }
+  .programsLocations .programsInfo,
+  .programsLocations .locationsInfo {
+    width: 39%; }
+    .programsLocations .programsInfo h2,
+    .programsLocations .locationsInfo h2 {
+      margin-top: 0; }
+  .programsLocations .programsInfo {
+    margin-top: 4%;
+    margin-right: 4%; }
+  .programsLocations .locationsInfo {
+    margin-top: 0;
+    margin-left: 4%; }
+  .events {
+    width: 80%; }
+    .events .eventsLeft {
+      width: 26%; }
+    .events .eventsRight {
+      width: 65%; }
+      .events .eventsRight p {
+        margin-bottom: 5%; }
+  .gallery {
+    width: 80%; }
+  .blogHeader {
+    height: 58vh; }
+  .headerContent {
+    width: 80%; }
+  .contactMain .contactLeft {
+    width: 27%;
+    margin-left: 9%; }
+  .contactMain .contactRight {
+    width: 51%;
+    margin-left: 7%; }
+    .contactMain .contactRight .contactForm {
+      margin-top: -40%; } }
+
+@media (max-width: 940px) {
+  .programsLocations .programs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .programsLocations .programs .programsImage,
+    .programsLocations .programs .programsInfo {
+      width: 75%;
+      margin: 0 auto;
+      text-align: center; }
+    .programsLocations .programs .programsInfo {
+      margin-top: 6%;
+      margin-bottom: 4%; }
+    .programsLocations .programs .programsImage img {
+      margin-top: 7%; }
+  .programsLocations .locations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    .programsLocations .locations .locationsImage,
+    .programsLocations .locations .locationsInfo {
+      width: 75%;
+      margin: 0 auto;
+      text-align: center; }
+    .programsLocations .locations .locationsInfo {
+      margin-top: 10%;
+      margin-bottom: 6%; }
+  .roadTrips {
+    width: 80%; }
+  .events .eventsLeft {
+    width: 30%; }
+  .events .eventsRight {
+    width: 61%; }
+  .blogHeader {
+    height: 50vh; }
+  .contactHeader {
+    height: 52vh; }
+  .contactMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    .contactMain .contactLeft {
+      width: 80%;
+      margin: 8% auto 0;
+      text-align: center; }
+      .contactMain .contactLeft .social ul {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 40%;
+        margin: 0 auto; }
+      .contactMain .contactLeft .social a {
+        font-size: 2.5rem; }
+    .contactMain .contactRight {
+      width: 80%;
+      margin: 0 auto; }
+      .contactMain .contactRight .contactForm {
+        margin: 0; } }
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: left;
+    background-size: cover;
+    height: 75vh; }
+    .hero .indexHeader h1 {
+      font-size: 13vw;
+      width: 60%;
+      margin: 0 auto;
+      padding: 14% 0; }
+    .hero .indexHeader img {
+      display: none; }
+  .menu ul {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    padding-top: 13%; }
+    .menu ul li {
+      margin-right: 10%; }
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .info .infoContainer {
+      width: 100%;
+      margin: 2% 0; }
+      .info .infoContainer .infoContent {
+        margin: 0 5%; }
+  .roadTrips {
+    padding-bottom: 10%; }
+    .roadTrips p {
+      margin-bottom: 7%; }
+  .pool img {
+    height: 45vh;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .events {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .events .eventsLeft,
+    .events .eventsRight {
+      width: 100%;
+      margin: 0 auto; }
+    .events .eventsRight {
+      text-align: center;
+      margin-top: 10%; }
+  .blogHeader {
+    background-position: 10%;
+    background-size: cover;
+    height: 75vh; }
+  .headerContent h1 {
+    font-size: 13vw;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8% 0; }
+  .blogMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .blogMain .blogLeft {
+      width: 65%;
+      margin: 0 auto; }
+    .blogMain h3 {
+      font-size: 2.3rem; }
+    .blogMain .blogRight {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 10%; }
+      .blogMain .blogRight .activitiesHeading,
+      .blogMain .blogRight .commentsHeading {
+        font-size: 9vw; }
+    .blogMain p {
+      font-size: 1.6rem; }
+  .contactHeader {
+    background-size: cover;
+    height: 75vh; } }
+
+@media (max-width: 480px) {
+  .hero .fa-bars {
+    visibility: visible; }
+  .headerContent .fa-bars {
+    visibility: visible; }
+  .menu {
+    display: none; }
+  .indexHeader {
+    margin: 0;
+    padding-top: 50%; }
+  .headerContent {
+    padding-top: 50%; }
+  .info {
+    padding-top: 10%; }
+  .programsLocations {
+    padding: 5% 0; }
+    .programsLocations .programsInfo h2 {
+      margin-top: 4%; }
+    .programsLocations .locationsInfo h2 {
+      margin-top: 10%; }
+  .roadTrips p {
+    margin-bottom: 9%; }
+  .events .eventsRight h2 {
+    margin-top: 6%; }
+  .events .eventsRight p {
+    margin: 8% 0; }
+  .gallerySection .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .gallerySection .gallery .galleryImage {
+      width: 100%;
+      margin: 5% 0; }
+  .blogMain .blogLeft .mission {
+    margin: 0;
+    padding: 7px 7px 7px 30px; }
+  .blogMain .blogRight .activitiesDescription {
+    padding: 12% 0 10% 6%;
+    margin-bottom: 5%; }
+  .blogMain .blogRight .activitiesHeading,
+  .blogMain .blogRight .commentsHeading {
+    font-size: 4.3rem; }
+  form input[id="name"],
+  form input[id="email"] {
+    width: 97%; }
+  .contactMain {
+    margin-top: 10%; }
+    .contactMain .contactLeft {
+      margin-top: 13%;
+      margin-bottom: 4%; } }

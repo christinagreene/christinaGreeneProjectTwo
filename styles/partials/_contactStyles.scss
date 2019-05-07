@@ -2,7 +2,7 @@
 
 // Colours ///////////
 $primaryFontColor: #f3faff;
-$secondayFontColor: #474bb5;
+$secondaryFontColor: #474bb5;
 $primaryBackgroundColor: #03697c;
 $secondaryBackgroundColor: #474bb5;
 $accentColor: #08fded;
@@ -23,6 +23,7 @@ $secondaryFont: 'Walter Turncoat', cursive;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 5% 0 8% 0;
   .contactLeft {
     width: 25%;
@@ -44,10 +45,31 @@ $secondaryFont: 'Walter Turncoat', cursive;
       &:hover {
         color: $accentColor;
       }
+      &:active {
+        color: $secondaryFontColor;
+      }
+      &:focus {
+        border: 1px dotted $secondaryFontColor;
+      }
+      &:visited {
+        color: $footerColor;
+      }
     }
     p a {
       color: $primaryFontColor;
       text-decoration: none;
+      &:hover {
+        color: $accentColor;
+      }
+      &:active {
+        color: $secondaryFontColor;
+      }
+      &:focus {
+        border: 1px dotted $secondaryFontColor;
+      }
+      &:visited {
+        color: $footerColor;
+      }
     }
     .contactAddress p {
       margin: 0;

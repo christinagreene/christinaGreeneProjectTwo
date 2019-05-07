@@ -2,7 +2,7 @@
 
 // Colours ///////////
 $primaryFontColor: #f3faff;
-$secondayFontColor: #474bb5;
+$secondaryFontColor: #474bb5;
 $primaryBackgroundColor: #03697c;
 $secondaryBackgroundColor: #474bb5;
 $accentColor: #08fded;
@@ -14,9 +14,13 @@ $primaryFont: 'Roboto', sans-serif;
 $secondaryFont: 'Walter Turncoat', cursive;
 //////////////////////
 
+.hero .menu {
+  width: 80%;
+}
+
 .menu ul {
   margin: 0;
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -35,11 +39,19 @@ $secondaryFont: 'Walter Turncoat', cursive;
       &:hover {
         border-bottom: 3px solid $accentColor;
       }
+      &:active {
+        border-bottom: 3px dashed $secondaryFontColor;
+      }
+      &:focus {
+        border: 1px dotted $accentColor;
+      }
+      &:visited {
+        color: rgba(129, 204, 199, 0.849);
+      }
     }
   }
 }
 
-.blogMenu ul,
-.contactMenu ul {
+.secondaryMenu ul {
   padding-bottom: 30px;
 }

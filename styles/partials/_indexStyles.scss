@@ -2,7 +2,7 @@
 
 // Colours ///////////
 $primaryFontColor: #f3faff;
-$secondayFontColor: #474bb5;
+$secondaryFontColor: #474bb5;
 $primaryBackgroundColor: #03697c;
 $secondaryBackgroundColor: #474bb5;
 $accentColor: #08fded;
@@ -17,18 +17,18 @@ $secondaryFont: 'Walter Turncoat', cursive;
 // Header/////////////
 .hero {
   background: url(../../assets/homeHeader.jpg) top center/100% no-repeat;
-  height: 110vh;
+  // height: 110vh;
 }
 
 .indexHeader {
   display: flex;
   flex-direction: row;
-  margin: 43px 0 100px 0;
+  margin: 8.2% 0 0 0;
   h1 {
-    font-size: 11.52rem;
+    font-size: 9vw;
     width: 44%;
-    margin-left: 9%;
-    margin-right: 3%;
+    margin-left: 8.5%;
+    margin-right: 4%;
     padding-top: 27px;
   }
   img {
@@ -42,16 +42,13 @@ $secondaryFont: 'Walter Turncoat', cursive;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 4% 0 8% 0;
-  .space,
-  .community,
-  .blog,
-  .touch {
+  .infoContainer {
     width: 50%;
     display: flex;
     flex-direction: row;
     .fas {
       background: $accentColor;
-      color: $secondayFontColor;
+      color: $secondaryFontColor;
       width: 40px;
       height: 40px;
       line-height: 40px;
@@ -78,7 +75,7 @@ $secondaryFont: 'Walter Turncoat', cursive;
   justify-content: space-between;
   }
   .programs {
-    margin-bottom: 50px;
+    margin-bottom: 4%;
   }
   .locations {
   }

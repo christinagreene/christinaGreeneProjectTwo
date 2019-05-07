@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <a href="#homeMain" class="visuallyHidden">Skip to the main content on this page.</a>
   <header class="hero">
     <nav class="menu wrapper">
       <ul>
@@ -18,7 +19,7 @@
           <a href="index.html" aria-label="Go to FunPlace's home page.">Home</a>
         </li>
         <li>
-          <a href="index.html/#about" aria-label="Go to FunPlace's About section on the home page.">About</a>
+          <a href="#about" aria-label="Go to FunPlace's About section on the home page.">About</a>
         </li>
         <li>
           <a href="blog.html" aria-label="Go to FunPlace's blog.">Blog</a>
@@ -28,15 +29,16 @@
         </li>
       </ul>
     </nav>
+    <i class="fa fa-bars"></i>
     <div class="indexHeader">
       <h1 class="mainHeading">FunPlace</h1>
       <img src="assets/image1.jpg" alt="A child on a skateboard wearing protective gear.">
     </div>
   </header>
-  <main>
+  <main id="homeMain">
     <!-- Section 1 - About Section -->
     <section class="info wrapper" id="about">
-      <div class="space">
+      <div class="infoContainer">
         <div class="icon">
           <i class="fas fa-home" aria-hidden="true"></i>
         </div>
@@ -45,7 +47,7 @@
           <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
         </div>
       </div>
-      <div class="community">
+      <div class="infoContainer">
         <div class="icon">
           <i class="fas fa-users" aria-hidden="true"></i>
         </div>
@@ -55,7 +57,7 @@
             velit sem, sit amet imperdiet dolor placerat.</p>
         </div>
       </div>
-      <div class="blog">
+      <div class="infoContainer">
         <div class="icon">
           <i class="fas fa-file" aria-hidden="true"></i>
         </div>
@@ -65,7 +67,7 @@
             velit sem, sit amet imperdiet dolor placerat.</p>
         </div>
       </div>
-      <div class="touch">
+      <div class="infoContainer">
         <div class="icon">
           <i class="fas fa-phone" aria-hidden="true"></i>
         </div>

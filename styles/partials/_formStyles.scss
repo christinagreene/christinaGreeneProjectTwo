@@ -2,7 +2,7 @@
 
 // Colours ///////////
 $primaryFontColor: #f3faff;
-$secondayFontColor: #474bb5;
+$secondaryFontColor: #474bb5;
 $primaryBackgroundColor: #03697c;
 $secondaryBackgroundColor: #474bb5;
 $accentColor: #08fded;
@@ -24,6 +24,18 @@ form {
     &::placeholder {
       opacity: 1;
     }
+    &:hover {
+      color: $accentColor;
+    }
+    &:active {
+      color: $footerColor;
+    }
+    &:focus {
+      border: 1px dotted $accentColor;
+    }
+    &:visited {
+      color: $secondaryFontColor;
+    }
   }
   input[id=name],
   input[id=email] {
@@ -34,28 +46,42 @@ form {
   input[id=name] {
     margin-right: 3%;
   }
+  textarea {
+    width: 97%;
+    height: 200px;
+    resize: none;
+    overflow: hidden; 
+  }
   button {
   display: block;
-  width: 96.7%;
+  width: 97%;
   font-family: $secondaryFont;
-  color: $secondayFontColor;
+  color: $secondaryFontColor;
   text-transform: capitalize;
   background: $accentColor;
   border: 1px solid $accentColor;
   padding: 5px;
-  margin: 5% 0 10% 0;
+  margin: 5% 0 6% 0;
   transition: all .3s ease-in-out;
   &:hover {
     background: $primaryFontColor;
     border: 1px solid $primaryFontColor;
   }
+  &:active {
+    color: $primaryBackgroundColor;
+  }
+  &:focus {
+    border: 1px dotted $secondaryFontColor;
+  }
+  &:visited {
+    color: $footerColor;
+  }
   }
 }
 
-
 // Comment Form only - Blog Page ///////////////
 .commentForm {
-  padding: 0 6%;
+  margin: 0 6% 0 5%;
   input[id=name],
   input[id=email],
   textarea {
