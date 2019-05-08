@@ -1,19 +1,5 @@
 // Base Styles for Entire Site //////////
 
-// Colours ///////////
-$primaryFontColor: #f3faff;
-$secondaryFontColor: #474bb5;
-$primaryBackgroundColor: #03697c;
-$secondaryBackgroundColor: #474bb5;
-$accentColor: #08fded;
-$footerColor: #044779;
-//////////////////////
-
-// Fonts /////////////
-$primaryFont: 'Roboto', sans-serif;
-$secondaryFont: 'Walter Turncoat', cursive;
-//////////////////////
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -116,5 +102,15 @@ h3 {
   }
   &:visited {
     color: $footerColor;
+  }
+}
+
+// Footer Styles ///////////
+footer {
+  background: $footerColor;
+  text-align: center;
+  p {
+    margin: 0;
+    padding: 10px 0;
   }
 }

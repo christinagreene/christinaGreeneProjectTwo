@@ -1,24 +1,12 @@
 // Contact Page Styles //////////
 
-// Colours ///////////
-$primaryFontColor: #f3faff;
-$secondaryFontColor: #474bb5;
-$primaryBackgroundColor: #03697c;
-$secondaryBackgroundColor: #474bb5;
-$accentColor: #08fded;
-$footerColor: #044779;
-//////////////////////
-
-// Fonts /////////////
-$primaryFont: 'Roboto', sans-serif;
-$secondaryFont: 'Walter Turncoat', cursive;
-//////////////////////
-
+// Header //////////////////////
 .contactHeader {
-  background: url(../../assets/contactHeader.jpg) top center/100% no-repeat;
+  background: url(../assets/contactHeader.jpg) top center/100% no-repeat;
   height: 70vh;
 }
 
+// Main Content ///////////////
 .contactMain {
   display: flex;
   flex-direction: row;
@@ -39,25 +27,16 @@ $secondaryFont: 'Walter Turncoat', cursive;
       margin-right: 3%;
     }
     .social a {
-      color: $primaryFontColor;
       padding: 5px;
       transition: color .3s ease-in-out;
-      &:hover {
-        color: $accentColor;
-      }
-      &:active {
-        color: $secondaryFontColor;
-      }
-      &:focus {
-        border: 1px dotted $secondaryFontColor;
-      }
-      &:visited {
-        color: $footerColor;
-      }
     }
     p a {
-      color: $primaryFontColor;
       text-decoration: none;
+    }
+      
+    .social a,
+    p a {
+      color: $primaryFontColor;
       &:hover {
         color: $accentColor;
       }
@@ -73,7 +52,6 @@ $secondaryFont: 'Walter Turncoat', cursive;
     }
     .contactAddress p {
       margin: 0;
-
     }
   }
   .contactRight {

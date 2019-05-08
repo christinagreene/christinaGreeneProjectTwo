@@ -128,7 +128,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clear: both;
   height: 0; }
 
-* {
+*, *::after, *::before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -229,6 +229,13 @@ h3 {
   .clickForMore:visited {
     color: #044779; }
 
+footer {
+  background: #044779;
+  text-align: center; }
+  footer p {
+    margin: 0;
+    padding: 10px 0; }
+
 .hero .menu {
   width: 80%; }
 
@@ -270,7 +277,7 @@ h3 {
   padding-bottom: 30px; }
 
 .hero {
-  background: url(../../assets/homeHeader.jpg) top center/100% no-repeat; }
+  background: url(../assets/homeHeader.jpg) top center/100% no-repeat; }
 
 .indexHeader {
   display: -webkit-box;
@@ -420,7 +427,7 @@ h3 {
       margin-right: 0; }
 
 .blogHeader {
-  background: url(../../assets/blogHeader.jpg) top center/100% no-repeat;
+  background: url(../assets/blogHeader.jpg) top center/100% no-repeat;
   height: 70vh; }
 
 .blogMain {
@@ -463,7 +470,8 @@ h3 {
       line-height: 1.5; }
     .blogMain .blogLeft a {
       text-decoration: none;
-      color: #f3faff; }
+      color: #f3faff;
+      padding-left: 10px; }
       .blogMain .blogLeft a:hover {
         border-bottom: 1px solid #08fded; }
       .blogMain .blogLeft a:active {
@@ -519,7 +527,7 @@ h3 {
       margin: 10px 0 30px 0; }
 
 .contactHeader {
-  background: url(../../assets/contactHeader.jpg) top center/100% no-repeat;
+  background: url(../assets/contactHeader.jpg) top center/100% no-repeat;
   height: 70vh; }
 
 .contactMain {
@@ -554,28 +562,25 @@ h3 {
     .contactMain .contactLeft .social li {
       margin-right: 3%; }
     .contactMain .contactLeft .social a {
-      color: #f3faff;
       padding: 5px;
       -webkit-transition: color .3s ease-in-out;
       -o-transition: color .3s ease-in-out;
       transition: color .3s ease-in-out; }
-      .contactMain .contactLeft .social a:hover {
-        color: #08fded; }
-      .contactMain .contactLeft .social a:active {
-        color: #474bb5; }
-      .contactMain .contactLeft .social a:focus {
-        border: 1px dotted #474bb5; }
-      .contactMain .contactLeft .social a:visited {
-        color: #044779; }
     .contactMain .contactLeft p a {
-      color: #f3faff;
       text-decoration: none; }
+    .contactMain .contactLeft .social a,
+    .contactMain .contactLeft p a {
+      color: #f3faff; }
+      .contactMain .contactLeft .social a:hover,
       .contactMain .contactLeft p a:hover {
         color: #08fded; }
+      .contactMain .contactLeft .social a:active,
       .contactMain .contactLeft p a:active {
         color: #474bb5; }
+      .contactMain .contactLeft .social a:focus,
       .contactMain .contactLeft p a:focus {
         border: 1px dotted #474bb5; }
+      .contactMain .contactLeft .social a:visited,
       .contactMain .contactLeft p a:visited {
         color: #044779; }
     .contactMain .contactLeft .contactAddress p {
@@ -605,6 +610,10 @@ form textarea {
   form input[id=email]::placeholder,
   form textarea::placeholder {
     opacity: 1; }
+  form input[id=name]::-webkit-input-placeholder,
+  form input[id=email]::-webkit-input-placeholder,
+  form textarea::-webkit-input-placeholder {
+    color: #f3faff; }
   form input[id=name]:hover,
   form input[id=email]:hover,
   form textarea:hover {
@@ -616,6 +625,7 @@ form textarea {
   form input[id=name]:focus,
   form input[id=email]:focus,
   form textarea:focus {
+    outline: none;
     border: 1px dotted #08fded; }
   form input[id=name]:visited,
   form input[id=email]:visited,
@@ -687,13 +697,6 @@ form button {
     border-bottom: 1px solid #f3faff; }
   .contactForm textarea {
     border: 1px solid #f3faff; }
-
-footer {
-  background: #044779;
-  text-align: center; }
-  footer p {
-    margin: 0;
-    padding: 10px 0; }
 
 @media (max-width: 1080px) {
   .info {

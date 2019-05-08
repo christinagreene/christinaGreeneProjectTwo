@@ -1,19 +1,5 @@
 // Contact & Comment Form  Styles //////////
 
-// Colours ///////////
-$primaryFontColor: #f3faff;
-$secondaryFontColor: #474bb5;
-$primaryBackgroundColor: #03697c;
-$secondaryBackgroundColor: #474bb5;
-$accentColor: #08fded;
-$footerColor: #044779;
-//////////////////////
-
-// Fonts /////////////
-$primaryFont: 'Roboto', sans-serif;
-$secondaryFont: 'Walter Turncoat', cursive;
-//////////////////////
-
 // Common styles ///////////
 form {
   input[id=name],
@@ -24,6 +10,9 @@ form {
     &::placeholder {
       opacity: 1;
     }
+    &::-webkit-input-placeholder {
+      color: $primaryFontColor;
+    }
     &:hover {
       color: $accentColor;
     }
@@ -31,6 +20,7 @@ form {
       color: $footerColor;
     }
     &:focus {
+      outline: none;
       border: 1px dotted $accentColor;
     }
     &:visited {
@@ -96,7 +86,7 @@ form {
   }
 }
 
-// Contact Form only - Conact Page /////////////
+// Contact Form only - Contact Page ////////////
 .contactForm {
   padding: 7% 4% 1% 6%;
   background: $secondaryBackgroundColor;

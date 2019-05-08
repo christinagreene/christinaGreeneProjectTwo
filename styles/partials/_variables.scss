@@ -1,5 +1,3 @@
-// Footer Styles ///////////
-
 // Colours ///////////
 $primaryFontColor: #f3faff;
 $secondaryFontColor: #474bb5;
@@ -13,13 +11,3 @@ $footerColor: #044779;
 $primaryFont: 'Roboto', sans-serif;
 $secondaryFont: 'Walter Turncoat', cursive;
 //////////////////////
-
-
-footer {
-  background: $footerColor;
-  text-align: center;
-  p {
-    margin: 0;
-    padding: 10px 0;
-  }
-}

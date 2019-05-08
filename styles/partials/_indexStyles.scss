@@ -1,22 +1,8 @@
 // Home Page  Styles //////////
 
-// Colours ///////////
-$primaryFontColor: #f3faff;
-$secondaryFontColor: #474bb5;
-$primaryBackgroundColor: #03697c;
-$secondaryBackgroundColor: #474bb5;
-$accentColor: #08fded;
-$footerColor: #044779;
-//////////////////////
-
-// Fonts /////////////
-$primaryFont: 'Roboto', sans-serif;
-$secondaryFont: 'Walter Turncoat', cursive;
-//////////////////////
-
 // Header/////////////
 .hero {
-  background: url(../../assets/homeHeader.jpg) top center/100% no-repeat;
+  background: url(../assets/homeHeader.jpg) top center/100% no-repeat;
   // height: 110vh;
 }
 
@@ -76,8 +62,6 @@ $secondaryFont: 'Walter Turncoat', cursive;
   }
   .programs {
     margin-bottom: 4%;
-  }
-  .locations {
   }
   .programsImage,
   .locationsImage {

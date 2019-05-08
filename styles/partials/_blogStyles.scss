@@ -1,24 +1,12 @@
 // Blog Page Styles //////////
 
-// Colours ///////////
-$primaryFontColor: #f3faff;
-$secondaryFontColor: #474bb5;
-$primaryBackgroundColor: #03697c;
-$secondaryBackgroundColor: #474bb5;
-$accentColor: #08fded;
-$footerColor: #044779;
-//////////////////////
-
-// Fonts /////////////
-$primaryFont: 'Roboto', sans-serif;
-$secondaryFont: 'Walter Turncoat', cursive;
-//////////////////////
-
+// Header ////////////////////
 .blogHeader {
-  background: url(../../assets/blogHeader.jpg) top center/100% no-repeat;
+  background: url(../assets/blogHeader.jpg) top center/100% no-repeat;
   height: 70vh;
 }
 
+// Main Content /////////////
 .blogMain {
   display: flex;
   flex-direction: row;
@@ -58,6 +46,7 @@ $secondaryFont: 'Walter Turncoat', cursive;
     a {
       text-decoration: none;
       color: $primaryFontColor;
+      padding-left: 10px;
       &:hover {
         border-bottom: 1px solid $accentColor;
       }
