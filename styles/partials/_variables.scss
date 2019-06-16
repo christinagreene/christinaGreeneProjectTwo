@@ -11,3 +11,16 @@ $footerColor: #044779;
 $primaryFont: 'Roboto', sans-serif;
 $secondaryFont: 'Walter Turncoat', cursive;
 //////////////////////
+
+
+@mixin flexbox($type, $direction, $alignment) {
+   display: $type;
+   flex-direction: $direction;
+   justify-content: $alignment;
+}
+
+// how to pass mixin in 
+
+// .classname {
+//    @include flexbox(whichever direction you want, next type, next type)
+// }
